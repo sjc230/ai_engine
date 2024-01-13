@@ -38,7 +38,7 @@ from tslearn.svm import TimeSeriesSVC
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import ConfusionMatrixDisplay, classification_report, RocCurveDisplay, auc, roc_curve, roc_auc_score
 
-import load_data as ld
+#import load_data as ld
 
 algo_list = ['decision tree','random forest','knn','gaussian','adaboost','gaussian nb','qda','svc','mlp','nusvc','bagging','extra trees','gradient boost','histogram gradient boost','bernoulli nb','nearest centroid','passive agressive','lda','sgd','radius nn','non-myopic early','time series knn','time series svc']
 
