@@ -24,7 +24,7 @@ from sklearn.metrics import ConfusionMatrixDisplay, classification_report, RocCu
 
 from tslearn.clustering import KernelKMeans, KShape, TimeSeriesKMeans
 
-import load_data as ld
+#import load_data as ld
 
 algo_list = ['k means','kernel k means','ts k means','k shape','affinity propagation','mini batch k means','bisecting k means']
 
@@ -1690,7 +1690,8 @@ if __name__ == '__main__':
 
   file_name = datapath / sys.argv[1]
 
-  data = ld.load(file_name)
+ #data = ld.load(file_name)
+  data = np.load(file_name)
 
   print("shape of  data is ",data.shape)
 
