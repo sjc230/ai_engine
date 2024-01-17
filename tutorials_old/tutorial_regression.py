@@ -144,7 +144,7 @@ plt.show()
 
 #fig2, ax = plt.subplots(1,len(names))
 
-# iterate over classifiers
+# iterate over regressors
 for j in range(len(names)):
     
     grid_search = GridSearchCV(estimator=pipes[j][0], param_grid=pipes[j][1], scoring='neg_mean_squared_error',cv=5, verbose=1, n_jobs=-1)

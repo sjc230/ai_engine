@@ -29,7 +29,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report, auc, roc_curve, roc_auc_score
 from sklearn.metrics import PredictionErrorDisplay 
 
-import load_data as ld
+#import load_data as ld
 
 algo_list = ['svr','nusvr','linear svr','ridge','ridge cv','linear regression','sgd','ard','bayesian ridge','passive aggressive','gamma','poisson','tweedie','huber','quantile','ranscar','thielsen','elasticnet','elasticnet cv','multitask elastic net','multitask elastic net cv','lars','lasso','lasso cv','lasso lars','lasso lars cv','lasso lars ic','orthogonal matching pursuit','orthogonal matching pursuit cv','ts knn','ts svr','perceptron']
 
@@ -675,7 +675,8 @@ if __name__ == '__main__':
 
   file_name = datapath / sys.argv[1]
 
-  data = ld.load(file_name)
+  #data = ld.load(file_name)
+  data = np.load(file_name)
 
   print("shape of  data is ",data.shape)
 
@@ -845,7 +846,7 @@ if __name__ == '__main__':
     print("You have entered an incorrect algorithm name.  Please rerun the program and select an algoritm from the list")
     exit
 
-  # iterate over classifiers
+  # iterate over regressors
   for j in range(len(names)):
       fig = make_subplots(rows=n_classes, cols=2)
 
