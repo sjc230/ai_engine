@@ -28,7 +28,7 @@ from torch.nn import functional as F
 from sklearn.preprocessing import normalize
 from sklearn.model_selection import StratifiedKFold, train_test_split
 
-import load_data
+import tutorials_old.load_data as load_data
 import few_shot.loader as loader
 import few_shot.model as models
 import few_shot.training as training

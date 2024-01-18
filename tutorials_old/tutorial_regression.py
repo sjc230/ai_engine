@@ -28,7 +28,7 @@ import plotly.express as px
 
 import joblib
 
-import load_data as ld
+import tutorials_old.load_data as ld
 import sk_regressor_builder as skr
 
 

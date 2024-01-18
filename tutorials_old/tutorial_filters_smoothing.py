@@ -16,7 +16,7 @@ from numpy import array
 
 from sklearn.model_selection import train_test_split
 import filter_builder as fltr
-import load_data as ld
+import tutorials_old.load_data as ld
 
 # Wiener
 def testWiener(y):

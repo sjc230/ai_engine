@@ -42,7 +42,7 @@ import plotly.express as px
 
 import joblib
 
-import load_data as ld
+import tutorials_old.load_data as ld
 import sk_classifier_builder as skb
 import sk_classifier_metrics as skm
 
