@@ -167,6 +167,7 @@ if __name__ == '__main__':
   file_name = datapath / sys.argv[1]
 
   data = ld.load(file_name)
+  #data = np.load(file_name)
 
   print("shape of  data is ",data.shape)
 
