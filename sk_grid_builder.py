@@ -26,9 +26,9 @@ def gridsearch_classifier(names,pipes,X_train,X_test,y_train,y_test):
     # iterate over classifiers
     for j in range(len(names)):
 
-        today = date.today()
-        now = today.strftime("%b-%d-%Y")
-        save_file = str(names[j]) + '-' + str(now) + '-HeatMap.png'
+        #today = date.today()
+        #now = today.strftime("%b-%d-%Y")
+        #save_file = str(names[j]) + '-' + str(now) + '-HeatMap.png'
 
         grid_search = GridSearchCV(estimator=pipes[j][0], param_grid=pipes[j][1], scoring='neg_mean_squared_error',cv=5, verbose=1, n_jobs=-1)
         grid_search.fit(X_train, y_train)
