@@ -32,7 +32,7 @@ import joblib
 
 import tutorials_old.load_data as ld
 import sk_clustering_builder as skcl
-import sk_classifier_metrics as skm
+import tutorials_old.sk_classifier_metrics as skm
 
 import sk_novelty_builder as skn
 

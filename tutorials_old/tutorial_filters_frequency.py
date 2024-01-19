@@ -28,7 +28,7 @@ import joblib
 
 import tutorials_old.load_data as load_data
 import sk_classifier_builder as skb
-import sk_classifier_metrics as skm
+import tutorials_old.sk_classifier_metrics as skm
 import filter_builder as fltr
 
 import tutorials_old.load_data as ld

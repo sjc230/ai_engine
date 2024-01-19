@@ -44,7 +44,7 @@ import joblib
 
 import tutorials_old.load_data as ld
 import sk_classifier_builder as skb
-import sk_classifier_metrics as skm
+import tutorials_old.sk_classifier_metrics as skm
 
 import sk_novelty_builder as skn
 
